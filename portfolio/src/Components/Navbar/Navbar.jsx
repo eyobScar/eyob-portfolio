@@ -26,6 +26,14 @@ const Navbar = () => {
     return activeSection;
   };
 
+  const scrollToSection = (sectionId, offset = 80) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const target = section.offsetTop() - offset;
+      window.scrollTo({ target, behaviour: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
