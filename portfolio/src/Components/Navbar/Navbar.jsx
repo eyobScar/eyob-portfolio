@@ -1,9 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
+import { navLinks } from "../../Data/navLinks";
 const Navbar = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  
+  const activeSection = scrollPositionCtlr(navLinks.map((item) => item.id));
+
+  const handleNavClick = (sectionId) => {
+    scrollToSection(sectionId);
+    setIsOpenMenu(false);
+  };
 
   const scrollPositionCtlr = (sectionIds, offset = 100) => {
+    const [activeSection, setActiveSection] = useState("");
     useEffect(() => {
       const handleScroll = () => {
         const scrollPosition = window.scrollY + offset;
