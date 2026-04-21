@@ -4,6 +4,7 @@
   --font-display: sans-serif;
   --breakpoint-3x1: 1920px;
   --color-primary: #ad2487;
+  --color-secondary: rgb(64, 64, 247);
 }
 
 @layer base {
@@ -58,6 +59,7 @@
       opacity: 0.5;
     }
   }
+
   @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -73,11 +75,10 @@
     animation: pulse 3s ease-in-out infinite;
   }
   .animate-spin {
-    animation : spin 8s linear infinite
+    animation: spin 8s linear infinite;
   }
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
-    
   }
 }

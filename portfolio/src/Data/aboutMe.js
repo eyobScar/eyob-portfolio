@@ -1,4 +1,4 @@
-export const PersonalInfo = {
+export const personalInfo = {
   name: "Eyob Alayu",
   title: "Full Stack Web Developer",
   email: "eyobalayu15@gmail.com",
@@ -9,7 +9,7 @@ export const PersonalInfo = {
     "I take real pleasure in solving problems, creating user-friendly applications, and turning ideas into working, meaningful solutions. Thank you for taking the time to visit my portfolio.it truly means a lot. I hope my work reflects my dedication and passion for this field, and I look forward to opportunities where I can learn, contribute, and grow further.",
   ],
 };
-export const SocialLinks = {
+export const socialLinks = {
   github: "https://",
   linkedIn: "https://",
   telegram: "https://",
