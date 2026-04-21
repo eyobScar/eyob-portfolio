@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
+import Hero from "./Components/Hero/Hero";
 
 const App = () => {
   return (
     <div>
       <Navbar />
+      <Hero />
       <p id="home" className="mt-100">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
         voluptatem, quisquam commodi veniam molestiae vel odio nesciunt fugiat

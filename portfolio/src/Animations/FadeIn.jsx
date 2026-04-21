@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 
-export const fadeIn = ({
-  threshold = 1,
+export const FadeIn = ({
+  threshold = 0.1,
   delay = 0,
   duration = 500,
-  threshold = 0.1,
-  children
+  children,
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
@@ -35,7 +34,7 @@ export const fadeIn = ({
   return (
     <div
       ref={elementRef}
-      className={`${setIsVisible ? "animate-fadeIn" : "opacity-0"}`}
+      className={`${setIsVisible ? "animate-FadeIn" : "opacity-0"}`}
       style={{
         animationDelay: isVisible ? `${delay}ms` : "0ms",
         animationDuration: isVisible ? `${duration}ms` : "0ms",

@@ -3,8 +3,8 @@
 @theme {
   --font-display: sans-serif;
   --breakpoint-3x1: 1920px;
-  --color-primary: #ad2487;
-  --color-secondary: rgb(64, 64, 247);
+  --color-primary: #ff4ecd;
+  --color-secondary: #4da6ff;
 }
 
 @layer base {

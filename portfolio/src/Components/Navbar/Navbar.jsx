@@ -2,46 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import { navLinks } from "../../Data/navLinks";
 import { Layers, Menu, X } from "lucide-react";
 import { personalInfo } from "../../Data/aboutMe";
+import { scrollToSection } from "../../Task/scrollToSection";
+import { useScrollSpy } from "../../Task/useScrollSpy";
 
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const useScrollSpy = (sectionIds, offset = 100) => {
-    const [activeSection, setActiveSection] = useState("");
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY + offset;
-        for (let ind = sectionIds.length - 1; ind >= 0; ind--) {
-          const section = document.getElementById(sectionIds[ind]);
-          if (section) {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            if (
-              scrollPosition >= sectionTop &&
-              scrollPosition < sectionTop + sectionHeight
-            ) {
-              setActiveSection(sectionIds[ind]);
-              return;
-            }
-          }
-        }
-      };
-      window.addEventListener("scroll", handleScroll, { passive: true });
-      handleScroll();
-      return () => window.removeEventListener(scroll, handleScroll);
-    }, [sectionIds, offset]);
-    return activeSection;
-  };
   const activeSection = useScrollSpy(navLinks.map((item) => item.id));
-
-  const scrollToSection = (sectionId, offset = 80) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const top = section.offsetTop - offset;
-      window.scrollTo({ top, behavior: "smooth" });
-    }
-  };
 
   const handleNavClick = (sectionId) => {
     scrollToSection(sectionId);
