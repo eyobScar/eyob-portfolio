@@ -5,19 +5,26 @@ import image from "../../assets/food_delivery.png";
 
 const Projects = () => {
   return (
-    <section className="max-w-[1300px] mx-auto px-5 flex justify-center">
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
-        {projects.map((project) => (
-          <Project
-            key={project.id}
-            image={image}
-            projectTitle={project.title}
-            projectDescription={project.description}
-            projectTechs={project.techs}
-            projectLiveURL={project.liveURL}
-            projectGithubURL={project.githubURL}
-          />
-        ))}
+    <section className="max-w-[1300px] mx-auto px-5 ">
+      <div className="text-center">
+        <h3 className="text-2xl">My Projects</h3>
+        <hr className="w-13 mx-auto text-primary border-none h-1 bg-primary my-2" />
+        <p className="opacity-80">Projects I have built </p>
+      </div>
+      <div className="flex justify-center">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
+          {projects.map((project) => (
+            <Project
+              key={project.id}
+              image={image}
+              projectTitle={project.title}
+              projectDescription={project.description}
+              projectTechs={project.techs}
+              projectLiveURL={project.liveURL}
+              projectGithubURL={project.githubURL}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

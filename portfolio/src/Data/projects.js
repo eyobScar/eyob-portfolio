@@ -32,26 +32,5 @@ export const projects = [
     liveURL: "https://",
     githubURL: "https://github.com",
   },
-  {
-    id: 4,
-    title: "Food Delivery",
-    description:
-      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
-    image: "/assets/food_delivery.png",
-    category: "Full Stack",
-    techs: ["React", "Node.js", "MongoDB", " Stripe"],
-    liveURL: "https://",
-    githubURL: "https://github.com",
-  },
-  {
-    id: 5,
-    title: "Food Delivery",
-    description:
-      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
-    image: "/assets/food_delivery.png",
-    category: "Full Stack",
-    techs: ["React", "Node.js", "MongoDB", " Stripe"],
-    liveURL: "https://",
-    githubURL: "https://github.com",
-  },
+
 ];
