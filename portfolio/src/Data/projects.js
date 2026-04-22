@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "Food Delivery",
     description:
-      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. This project gave me hands-on experience building everything end-to-end—from designing the frontend UI to developing backend APIs and working with a database.",
+      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
     image: "/assets/food_delivery.png",
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
@@ -14,7 +14,7 @@ export const projects = [
     id: 2,
     title: "Food Delivery",
     description:
-      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. This project gave me hands-on experience building everything end-to-end—from designing the frontend UI to developing backend APIs and working with a database.",
+      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
     image: "/assets/food_delivery.png",
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
@@ -25,7 +25,7 @@ export const projects = [
     id: 3,
     title: "Food Delivery",
     description:
-      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. This project gave me hands-on experience building everything end-to-end—from designing the frontend UI to developing backend APIs and working with a database.",
+      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
     image: "/assets/food_delivery.png",
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
@@ -36,7 +36,7 @@ export const projects = [
     id: 4,
     title: "Food Delivery",
     description:
-      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. This project gave me hands-on experience building everything end-to-end—from designing the frontend UI to developing backend APIs and working with a database.",
+      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
     image: "/assets/food_delivery.png",
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
@@ -47,7 +47,7 @@ export const projects = [
     id: 5,
     title: "Food Delivery",
     description:
-      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. This project gave me hands-on experience building everything end-to-end—from designing the frontend UI to developing backend APIs and working with a database.",
+      "I built a full-stack food delivery web app where users can easily browse menus, add items to their cart, and place orders with secure online payments. It also includes an admin dashboard to manage orders, users, and menu items. ",
     image: "/assets/food_delivery.png",
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
