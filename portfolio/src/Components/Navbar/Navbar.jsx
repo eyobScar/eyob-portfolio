@@ -72,7 +72,7 @@ const Navbar = () => {
               >
                 Get Me
               </button>
-              <div className="-order-1">
+              <div className="-order-1" onClick={() => setDark((dark) => !dark)}>
                 {dark ? (
                   <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300" />
                 ) : (

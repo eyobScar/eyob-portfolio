@@ -8,7 +8,7 @@ export const projects = [
     category: "Full Stack",
     techs: ["React", "Node.js", "MongoDB", " Stripe"],
     liveURL: "https://",
-    githubURL: "https://github.com",
+    githubURL: "https://github.com/eyobScar/eyob-portfolio.git",
   },
   {
     id: 2,

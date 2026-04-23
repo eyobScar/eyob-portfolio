@@ -17,17 +17,14 @@ const Hero = () => {
         <div className="flex flex-col gap-5 items-start justify-center">
           <FadeIn>
             <div className="">
-              <div className="font-bold text-3xl">
+              <div className="font-bold text-3xl lg:text-4xl">
                 <h1>Hi there, </h1>
                 <div className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   <h1>I'm</h1>
                   <h2>Eyob Alayu</h2>
                 </div>
               </div>
-              <Typing
-                className="bg-linear-to-r from-primary to-secondary text-pink-600"
-                words={words}
-              />
+              <Typing words={words} />
             </div>
           </FadeIn>
           <FadeIn>
