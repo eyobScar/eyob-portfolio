@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-display: sans-serif;
+  --font-display: "Inter", sans-serif;
   --breakpoint-3x1: 1920px;
   --color-primary: #ff4ecd;
   --color-secondary: #4da6ff;
-  --color-accent : #111827
+  --color-accent: #111827;
 }
 
 @layer base {
@@ -65,7 +66,7 @@
       opacity: 0.3;
     }
     50% {
-            opacity: 0.5;
+      opacity: 0.5;
     }
   }
 

@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const handleNavClick = (sectionId) => {
     scrollToSection(sectionId);
-    // setIsOpenMenu(false);
+    setIsOpenMenu(false);
   };
 
   useEffect(() => {
@@ -65,12 +65,13 @@ const Navbar = () => {
                 Get Me
               </button>
               <div className="-order-1">
-                {mode === "dark" ? <Sun /> : <Moon />}
+                {mode === "dark" ? (
+                  <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300" />
+                ) : (
+                  <Moon className="w-5 text-black opacity-80 hover:opacity-100 transition-all duration-300" />
+                )}
               </div>
-            </div> <div className="-order-1">
-                {mode === "dark" ? <Sun /> : <Moon  />}
-              </div>
-
+            </div>
             <div className="group md:hidden flex items-center gap-2">
               <button
                 onClick={() => setIsOpenMenu(!isOpenMenu)}
@@ -85,7 +86,11 @@ const Navbar = () => {
                 )}
               </button>
               <div className="-order-1">
-                {mode === "dark" ? <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300"/> : <Moon className="w-5 text-black opacity-80 hover:opacity-100 transition-all duration-300"/>}
+                {mode === "dark" ? (
+                  <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300" />
+                ) : (
+                  <Moon className="w-5 text-black opacity-80 hover:opacity-100 transition-all duration-300" />
+                )}
               </div>
             </div>
           </div>
