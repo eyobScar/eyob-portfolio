@@ -9,8 +9,3 @@ export const personalInfo = {
     "",
   ],
 };
-export const socialLinks = {
-  github: "https://",
-  linkedIn: "https://",
-  telegram: "https://",
-};

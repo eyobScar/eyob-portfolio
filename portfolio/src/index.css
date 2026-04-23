@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 @theme {
   --font-display: "Inter", sans-serif;
@@ -7,6 +9,7 @@
   --color-primary: #ff4ecd;
   --color-secondary: #4da6ff;
   --color-accent: #111827;
+  
 }
 
 @layer base {

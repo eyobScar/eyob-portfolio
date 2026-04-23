@@ -8,12 +8,12 @@ const About = () => {
     <section className="" id="about">
       <div className="flex flex-col gap-6 max-w-[900px] mx-auto">
         <div className="w-fit mx-auto">
-          <h2 className=" text-2xl">About Me</h2>
+          <h2 className=" text-2xl dark:text-white text-black">About Me</h2>
           <hr className="border-none h-1 w-20 bg-primary rounded-full mx-auto mt-1" />
         </div>
         <FadeIn>
           <div
-            className={`opacity-50 transition-all duration-300 ${isCollapssed ? "line-clamp-4" : ""} `}
+            className={`text-black/70 dark:text-white/50 transition-all duration-300 ${isCollapssed ? "line-clamp-4" : ""} `}
           >
             <p>
               Thank you for taking the time to visit my portfolio. I’m Eyob Alayu,

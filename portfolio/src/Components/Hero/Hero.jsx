@@ -31,7 +31,7 @@ const Hero = () => {
             </div>
           </FadeIn>
           <FadeIn>
-            <p className="opacity-60">
+            <p className="opacity-60 text-black dark:text-white/80">
               Turning ideas into full-stack web solutions , I build modern,
               responsive full-stack web applications that turn ideas into real,
               scalable digital products.
@@ -40,9 +40,9 @@ const Hero = () => {
 
           <FadeIn>
             <div className="relative max-w-80 ">
-              <div className="absolute inset-0 bg-pink-600 rounded-lg blur"></div>
+              <div className="absolute inset-0 bg-primary rounded-lg blur"></div>
               <button
-                className="relative bg-black w-full flex item-center justify-center space-x-3 py-1 px-5 rounded-lg text-sm"
+                className="relative dark:bg-black bg-white w-full flex item-center justify-center space-x-3 py-1 px-5 rounded-lg text-sm"
                 onClick={() => scrollToSection("contact-me")}
               >
                 <span className="">

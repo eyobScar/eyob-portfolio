@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <section className=" " id="projects">
       <div className="text-center">
-        <h3 className="text-2xl">My Projects</h3>
+        <h3 className="text-2xl dark:text-white text-black">My Projects</h3>
         <hr className="w-20 mx-auto text-primary border-none h-1 bg-primary my-2" />
-        <p className="opacity-80">Projects I have built </p>
+        <p className="text-black/80 dark:text-white/80">Projects I have built </p>
       </div>
       <div className="flex justify-center">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 ">

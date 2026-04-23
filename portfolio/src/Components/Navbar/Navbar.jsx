@@ -8,7 +8,15 @@ import { useScrollSpy } from "../../Task/useScrollSpy";
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mode, setMode] = useState("dak");
+  const [dark, setDark] = useState(true);
+
+  localStorage.setItem("theme", "dark");
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.classList.toggle("dark", dark);
+    localStorage.setItem("theme", dark ? "dark" : "light");
+  }, [dark]);
 
   const activeSection = useScrollSpy(navLinks.map((item) => item.id));
 
@@ -41,12 +49,12 @@ const Navbar = () => {
                 {personalInfo.name.split(" ")[0]}
               </button>
             </div>
-            <ul className="hidden md:flex gap-3">
+            <ul className="hidden md:flex gap-5">
               {navLinks.map((link) => (
                 <li key={link._id} className="group ">
                   <button
                     onClick={() => handleNavClick(link.id)}
-                    className={`bg-linear-to-r from-primary to-secondary bg-clip-text relative text-base font-medium group-hover:text-pink-800  cursor-pointer ${activeSection === link.id ? " text-transparent" : "text-white"}`}
+                    className={`bg-linear-to-r from-primary to-secondary bg-clip-text relative text-base font-medium group-hover:text-primary/80 transition-all duration-300  cursor-pointer ${activeSection === link.id ? " text-transparent" : "text-black/70 dark:text-white text-sm"}`}
                   >
                     {link.name}
                     <span
@@ -65,7 +73,7 @@ const Navbar = () => {
                 Get Me
               </button>
               <div className="-order-1">
-                {mode === "dark" ? (
+                {dark ? (
                   <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300" />
                 ) : (
                   <Moon className="w-5 text-black opacity-80 hover:opacity-100 transition-all duration-300" />
@@ -79,17 +87,19 @@ const Navbar = () => {
                 aria-label="menu"
                 aria-expanded={isOpenMenu}
               >
-                {isOpenMenu ? (
-                  <X className="w-6 h-6" />
-                ) : (
-                  <Menu className="w-6 h-6" />
-                )}
+                <div >
+                  {isOpenMenu ? (
+                    <X className="w-6 h-6 text-black dark:text-white" />
+                  ) : (
+                    <Menu className="w-6 h-6 text-black dark:text-white" />
+                  )}
+                </div>
               </button>
-              <div className="-order-1">
-                {mode === "dark" ? (
+              <div className="-order-1 " onClick={() => setDark((dark) => !dark)}>
+                {dark ? (
                   <Sun className="w-5 text-yellow-500 opacity-80 hover:opacity-100 transition-all duration-300" />
                 ) : (
-                  <Moon className="w-5 text-black opacity-80 hover:opacity-100 transition-all duration-300" />
+                  <Moon className="w-5 text-black dark:text-white/80 dark:hover:text-white/100 opacity-80 hover:opacity-100 transition-all duration-300" />
                 )}
               </div>
             </div>
@@ -101,7 +111,7 @@ const Navbar = () => {
                 {navLinks.map((link) => (
                   <button
                     key={link._id}
-                    className={`w-full block text-left px-3 py-2 rounded-lg transition-all duration-300 bg-linear-to-r from-primary to-secondary bg-clip-text hover:text-transparent  cursor-pointer ${activeSection === link.id ? "text-transparent" : "text-white"}  `}
+                    className={`w-full block text-left px-3 py-2 rounded-lg transition-all duration-300 bg-linear-to-r from-primary to-secondary bg-clip-text hover:text-transparent  cursor-pointer ${activeSection === link.id ? "text-transparent" : " text-black/70 dark:text-white/90"}  `}
                     onClick={() => {
                       scrollToSection(link.id);
                       setIsOpenMenu(false);

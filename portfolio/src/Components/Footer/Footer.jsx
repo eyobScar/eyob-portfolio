@@ -18,7 +18,7 @@ const Footer = () => {
             <h3 className="bg-gradient-to-r from-primary to-secondary text-2xl w-fit bg-clip-text text-transparent font-bold">
               Eyob
             </h3>
-            <p className="opacity-60">
+            <p className="dark:text-white/60 text-black/70" >
               Turning ideas into full-stack web solutions
             </p>
           </div>
@@ -36,13 +36,13 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h3 className="font-bold text-xl">Quick Links</h3>
+          <h3 className="font-bold text-xl text-black dark:text-white">Quick Links</h3>
           <ul className="list-disc pl-5 marker:text-primary/50 group">
             {navLinks.map((link) => (
               <li key={link._id} className="hover:marker:text-primary/100 ">
                 <button
                   onClick={() => scrollToSection(link.id)}
-                  className="opacity-60 hover:opacity-100 transition-all duration-300"
+                  className="text-black opacity-60 hover:opacity-100 dark:text-white transition-all duration-300"
                 >
                   {link.name}
                 </button>
@@ -51,35 +51,35 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl">Connect with Me</h3>
-          <p className="opacity-60">Feel free to contact</p>
+          <h3 className="text-xl text-black dark:text-white">Connect with Me</h3>
+          <p className="text-black/60 dark:text-white/60">Feel free to contact</p>
           <div className="flex">
             <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
               <a href="https://github.com/eyobScar" target="_blank">
-                <FaGithub className="text-2xl  group-hover:text-primary/80 transition-all duration-300" />
+                <FaGithub className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white" />
               </a>
             </div>
             <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
               <a href="http://www.linkedin.com/in/eyobScar">
-                <FaLinkedin className="text-2xl  group-hover:text-primary/80 transition-all duration-300" />
+                <FaLinkedin className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white" />
               </a>
             </div>
             <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
               <a href="https://t.me/eyob_Scar" target="_blank">
-                <FaTelegram className="text-2xl  group-hover:text-primary/80 transition-all duration-300" />
+                <FaTelegram className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white" />
               </a>
             </div>
           </div>
         </div>
       </div>
       <div className="flex flex-col items-center mt-20 md:mt-30 ">
-        <p className="opacity-40">&copy; 2026 Eyob Alayu All rights reserved</p>
+        <p className="dark:text-white/40 text-black/40">&copy; 2026 Eyob Alayu All rights reserved</p>
         <div className="opacity-">
-          <span className="opacity-40">Buil with</span>
+          <span className="dark:text-white/40 text-black/40">Built with</span>
           <span className="">
             <Heart className="mb-1 inline mx-2 animate-pulse text-primary fill-primary w-4" />
           </span>
-          <span className="opacity-40">using React & Tailwindcss</span>
+          <span className="dark:text-white/40 text-black/40">using React & Tailwindcss</span>
         </div>
       </div>
     </section>

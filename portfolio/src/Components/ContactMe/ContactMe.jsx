@@ -82,21 +82,21 @@ const ContactMe = () => {
     <section className="mt-20 " id="contact-me">
       <div className="flex flex-col gap-3 ">
         <div>
-          <div className="flex items-center justify-center gap-2 border border-primary w-fit px-2 py-[2px] rounded-lg bg-primary/10 my-2 mx-auto">
+          <div className="flex items-center justify-center gap-2 border border-primary/60 w-fit px-2 py-[2px] rounded-lg bg-primary/10 my-2 mx-auto">
             <SiChatbot className="text-primary" />
             <span className="text-secondary">Get In Touch</span>
           </div>
-          <p className="text-center opacity-80 my-2">
+          <p className="text-center opacity-80 my-2 text-black/80 dark:text-white/80">
             You can send me a message anytime
           </p>
           <div className="flex flex-col gap-5 md:flex-row items-center">
             <div className="w-full">
               <form
                 onSubmit={handleSubmit}
-                className="bg-gray-900 flex flex-col gap-4 rounded-lg p-5"
+                className="dark:bg-accent bg-accent/5 flex flex-col gap-4 rounded-lg p-5"
               >
                 <div className="flex flex-col gap-1">
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name" className="text-black dark:text-white">Name</label>
                   <input
                     id="name"
                     type="text"
@@ -104,11 +104,11 @@ const ContactMe = () => {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Name"
-                    className="px-4 py-2 bg-secondary/10  rounded-lg outline-none"
+                    className="px-4 py-2 bg-secondary/10  rounded-lg outline-none text-black/80 dark:text-white/80"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email" className="text-black dark:text-white">Email</label>
                   <input
                     id="email"
                     type="email"
@@ -116,11 +116,11 @@ const ContactMe = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
-                    className="px-4 py-2 bg-secondary/10 rounded-lg outline-none"
+                    className="px-4 py-2 bg-secondary/10 rounded-lg outline-none text-black/80 dark:text-white/80"
                   />
                 </div>
                 <div className="flex flex-col gap1">
-                  <label htmlFor="message">Message</label>
+                  <label htmlFor="message" className="text-black dark:text-white">Message</label>
                   <textarea
                     id="message"
                     type="text"
@@ -129,7 +129,7 @@ const ContactMe = () => {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Message here..."
-                    className="px-4 py-2 bg-secondary/10 rounded-lg outline-none"
+                    className="px-4 py-2 bg-secondary/10 rounded-lg outline-none text-black/80 dark:text-white/80"
                   ></textarea>
                 </div>
                 <div className="group">
@@ -137,7 +137,7 @@ const ContactMe = () => {
                     type="submit"
                     className="flex justify-center gap-2 border border-primary/30 group-hover:border-primary/50 w-full py-2  rounded-lg group  transition-all duration-300 cursor-pointer"
                   >
-                    <span className=" text-secondary group-hover:[text-shadow:0_0_5px_rgba(82,159,237,0.9)] transition-all duration-300">
+                    <span className=" text-secondary dark:group-hover:[text-shadow:0_0_5px_rgba(82,159,237,0.9)] transition-all duration-300">
                       Send Message
                     </span>
                     <Send className="w-4 text-primary opacity-80 group-hover:opacity-100 transition-all duration-300" />
@@ -154,8 +154,8 @@ const ContactMe = () => {
             </div>
             <div className="w-full flex flex-col gap-4">
               <div>
-                <p className="text-2xl">Let's connect</p>
-                <p className="opacity-70">Feel free to reach out</p>
+                <p className="text-2xl text-black dark:text-white">Let's connect</p>
+                <p className="opacity-70 text-black/80 dark:text-white/80">Feel free to reach out</p>
               </div>
               <div className="flex items-center gap-3 p-2 border border-primary/30 rounded-lg">
                 <Mail className="text-primary" />
@@ -172,21 +172,21 @@ const ContactMe = () => {
                 </div>
               </div>
               <div>
-                <p className="opacity-70">You can get me through</p>
+                <p className="text-black/70 darK:text-white/70">You can get me through</p>
                 <div className="flex gap-3">
                   <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
                     <a href="https://github.com/eyobScar" target="_blank">
-                      <FaGithub className="text-2xl  group-hover:text-primary/80 transition-all duration-300" />
+                      <FaGithub className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white" />
                     </a>
                   </div>
                   <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
                     <a href="http://www.linkedin.com/in/eyobScar">
-                      <FaLinkedin className="text-2xl  group-hover:text-primary/80 transition-all duration-300" />
+                      <FaLinkedin className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white" />
                     </a>
                   </div>
                   <div className="p-2 border border-transparent w-fit rounded-lg hover:border hover:border-primary group transition-all duration-300">
                     <a href="https://t.me/eyob_Scar" target="_blank">
-                      <FaTelegram className="text-2xl  group-hover:text-primary/80 transition-all duration-300" />
+                      <FaTelegram className="text-2xl  group-hover:text-primary/80 transition-all duration-300 text-black dark:text-white"  />
                     </a>
                   </div>
                 </div>
